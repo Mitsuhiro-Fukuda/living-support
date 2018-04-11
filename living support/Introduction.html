@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.accordion.js"></script>
+        <script>
+        $(function() {
+        $('.accordion').accordion({
+        controlElement  : 'li > span',
+        contentElement  : 'li > ul',
+        addClassElement : 'li'
+            });
+            var $allOpenBtn  = $('#all-open');
+    var $allCloseBtn = $('#all-close');
+ 
+ 
+    $allOpenBtn.on('click', function() {
+        $accordion.accOpen();
+    });
+ 
+    $allCloseBtn.on('click', function() {
+        $accordion.accClose();
+    });
+        });
+        </script>
+	</head>
+<body class="introction_body">
+   
+    <header>
+        <div class="top_header">
+            <a href="content.html"><img src="images/logo.png" alt="logo" class="top_logo"></a>
+            <div class="top_header_right">
+                <p><a href="mypage.html">xxxさんのマイページ</a></p>
+            </div>
+        </div>
+        </header>
+    <div class="main">
+        <div class="intro_leftbox">
+            <ul class="accordion">
+            <li><span class="menu">家具</span>
+                <ul class="ul">
+                    <li>ソファー</li>
+                    <li>ベッド</li>
+                    <li>テーブル</li>
+                </ul>
+            </li>
+            <li><span class="menu">家電</span>
+                <ul class="ul">
+                    <li>テレビ</li>
+                    <li>オーディオ</li>
+                    <li>PC</li>
+                </ul>
+            </li>
+            <li><span class="menu">料理</span>
+                <ul class="ul">
+                    <li>調理器具</li>
+                    <li>食器</li>
+                    <li>タオル</li>
+                </ul>
+            </li>
+            <li><span class="menu">収納</span>
+                <ul class="ul">
+                    <li>用具入れ</li>
+                </ul>
+            </li>
+            <li><span class="menu">掃除</span>
+                <ul class="ul">
+                    <li>ころころ</li>
+                    <li>モップ</li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+             
+        <div class="intro_rightbox">
+            <div class="intro_rightbox_1">
+                <a href="view.html"><img src="images/a.jpg" class="photo"></a>
+                <div class="intro_textbox">
+                    <p class="intro_text">BESTEK テレビ壁掛け金具 26～65インチLED液晶テレビ対応 左右移動式 角度調節可能 BTTM0690B</p>
+                    <p class="intro_text2">価格:	￥ XXXXXXX</p>
+                </div>
+            </div>
+            <div class="intro_rightbox_1">
+                <a href="view.html"><img src="images/b.jpg" class="photo"></a>
+                <div class="intro_textbox">
+                    <p class="intro_text">ハイセンス 55V型 フルハイビジョン 液晶 テレビ HJ55K3120 外付けHDD録画対応</p>
+                    <p class="intro_text2">価格:	￥ XXXXXXX</p>
+                </div>
+            </div>
+        </div>
+        <br class="clear">
+    </div>
+</body>
+</html>
